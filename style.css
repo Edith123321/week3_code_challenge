@@ -101,8 +101,12 @@ body, html {
    
 }
 
-/*styling the search buttton*/
-
+/*styling the description text showing and showtime and time and seat capacity, */
+.container .description-button {
+    margin: 5px;  
+    text-align: center;
+  }
+  
 /*styling the search buttton*/
 
 /*styling the search buttton*/
