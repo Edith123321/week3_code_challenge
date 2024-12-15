@@ -28,3 +28,15 @@ function renderFilm(film) {
     const bookButton = card.querySelector(".book-button");
     const capacityElement = card.querySelector(".capacity");
 
+    bookButton.addEventListener("click", () => {
+        // Check if there are seats available
+        if (film.capacity - film.tickets_sold > 0) {
+            alert("You have successfully booked a seat!");
+
+
+            // Update the tickets sold and the capacity available
+            film.tickets_sold += 1;
+            const newCapacityAvailable = film.capacity - film.tickets_sold;
+            capacityElement.textContent = `Capacity: ${newCapacityAvailable} Seats`;
+
+   
