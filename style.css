@@ -107,7 +107,18 @@ body, html {
     text-align: center;
   }
   
-/*styling the search buttton*/
+/*styling the book buttton*/
+.container .description-button button {
+    float: center;
+    width: 40%;
+    height: 30px;
+    margin: 5px;
+    margin-top: 10px;
+    background-color: rgb(246, 65, 65);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /*styling the search buttton*/
 
