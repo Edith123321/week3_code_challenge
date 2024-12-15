@@ -49,4 +49,16 @@ function renderFilm(film) {
 }
 
 
+// Function to fetch and render all films
+function showAllFilms() {
+    fetch('http://localhost:3000/films')
+        .then(res => res.json())
+        .then(filmData => {
+            document.querySelector("#container").innerHTML = ""; // Clear existing films
+            filmData.forEach(film => renderFilm(film));
+        })
+        .catch(error => console.error('Error fetching films:', error));
+}
+
+
    
