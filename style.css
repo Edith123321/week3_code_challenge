@@ -17,8 +17,19 @@ body, html {
     align-items: center; /* Vertically centers the content */
     justify-content: center; /* Horizontally centers the content */
 }
+
 .header-content {
     display: flex;
     align-items: center; /* Aligns the search bar and button in the center vertically */
     gap: 10px; /* Adds spacing between the search bar and the button */
+}
+
+.search-bar {
+    width: 50%; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
