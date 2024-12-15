@@ -20,7 +20,11 @@ function renderFilm(film) {
             </div>
         </div>
     `;
-    
+
     // Add the film card to the container
     document.querySelector("#container").appendChild(card);
+
+    // Add functionality to the Book Seat button
+    const bookButton = card.querySelector(".book-button");
+    const capacityElement = card.querySelector(".capacity");
 
