@@ -70,7 +70,18 @@ body, html {
      justify-content: center;
  }
 
-/*styling the search buttton*/
+/*styling the card that holds individual films*/
+.card  {
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: 0;
+    width: 280px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+}
 
 
 /*styling the search buttton*/
