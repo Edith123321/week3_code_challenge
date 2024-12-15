@@ -71,5 +71,26 @@ function handleSearch() {
         const query = searchBar.value.toLowerCase();
         document.querySelector("#container").innerHTML = ""; // Clear previous results
 
+         fetch('http://localhost:3000/films')
+            .then((response) => response.json())
+            .then((films) => {
+                const filteredFilms = films.filter((film) =>
+                    film.description.toLowerCase().includes(query)
+                );
+
+
+                if (filteredFilms.length === 0) {
+                    document.querySelector("#container").innerHTML = `
+                        <p style="text-align: center; color: gray;">No films found matching "${query}"</p>`;
+                } else {
+                    filteredFilms.forEach((film) => renderFilm(film));
+                }
+            })
+            .catch((error) => {
+                console.error("Error fetching films:", error);
+                alert("An error occurred while searching.");
+            });
+    });
+}
 
    
