@@ -39,4 +39,14 @@ function renderFilm(film) {
             const newCapacityAvailable = film.capacity - film.tickets_sold;
             capacityElement.textContent = `Capacity: ${newCapacityAvailable} Seats`;
 
+            // If sold out, disable the button and update its text
+            if (newCapacityAvailable === 0) {
+                bookButton.textContent = "Sold Out";
+                bookButton.disabled = true;
+            }
+        }
+    });
+}
+
+
    
