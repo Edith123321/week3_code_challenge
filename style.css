@@ -90,7 +90,16 @@ body, html {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/*styling the search buttton*/
+/*styling the film poster image */
+.card img {
+    border-bottom:1px solid gray ;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+    cursor: pointer;
+   
+}
 
 /*styling the search buttton*/
 
