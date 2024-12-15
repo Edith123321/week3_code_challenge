@@ -20,4 +20,7 @@ function renderFilm(film) {
             </div>
         </div>
     `;
+    
+    // Add the film card to the container
+    document.querySelector("#container").appendChild(card);
 
