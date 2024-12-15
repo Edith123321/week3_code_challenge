@@ -93,4 +93,14 @@ function handleSearch() {
     });
 }
 
+
+// Initialize all functionalities
+function initialize() {
+    showAllFilms(); // Show all films initially
+    handleSearch(); // Set up search functionality
+}
+
+
+document.addEventListener("DOMContentLoaded", initialize);
+
    
