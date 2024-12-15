@@ -61,4 +61,15 @@ function showAllFilms() {
 }
 
 
+// Function to handle search functionality
+function handleSearch() {
+    const searchBar = document.querySelector(".search-bar");
+    const searchButton = document.querySelector(".search-button");
+
+
+    searchButton.addEventListener("click", () => {
+        const query = searchBar.value.toLowerCase();
+        document.querySelector("#container").innerHTML = ""; // Clear previous results
+
+
    
