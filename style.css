@@ -84,4 +84,26 @@ body, html {
 }
 
 
+/*styling the card hover*/
+.card:hover {
+    transform: scale(1.05); /* Makes the card slightly larger */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*styling the search buttton*/
+
+/*styling the search buttton*/
+
+/*styling the search buttton*/
+
+/*styling the search buttton*/
+
+
+/*styling the search buttton*/
+
+
+/*styling the search buttton*/
+
+/*styling the search buttton*/
+
 /*styling the search buttton*/
