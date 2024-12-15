@@ -6,3 +6,14 @@ body, html {
     font-size: smaller;
     color: rgb(87, 86, 86);
 }
+
+.header {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    background-image: url(image.png); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+}
