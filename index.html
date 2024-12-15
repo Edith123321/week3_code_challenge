@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Film Viewer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header-content">
-            <input type="text" placeholder="Search Film ... " class="search-bar">
-            <button class="search-button " type="submit">Search</button>
+            <input type="text" placeholder="Search Film..." class="search-bar">
+            <button class="search-button" type="submit">Search</button>
         </div>
     </header>
-    <div class="container" id="container">
+
+    <!-- Main layout for sidebar and content -->
+    <div class="layout">
+        <!-- Sidebar for all films -->
+        <aside class="sidebar" id="sidebar"></aside>
+
+        <!-- Main content for selected film -->
+        <main class="main-content" id="mainContent"></main>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
