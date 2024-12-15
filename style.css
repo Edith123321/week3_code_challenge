@@ -118,16 +118,11 @@ body, html {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/*styling the search buttton*/
+/*styling the book buttton hover */
 
-
-/*styling the search buttton*/
-
-
-/*styling the search buttton*/
-
-/*styling the search buttton*/
-
-/*styling the search buttton*/
+.container .description-button button:hover {
+    background-color: darkred;
+}
